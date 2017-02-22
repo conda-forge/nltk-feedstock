@@ -1,6 +1,6 @@
 {%set name = "nltk" %}
 {%set version = "3.2.2" %}
-{%set compress_type = "zip" %}
+{%set compress_type = "tar.gz" %}
 {%set hash_type = "sha256" %}
 {%set hash_val = "1b37db344770021c9be3d68f48d1667a8dae6eeff0e502b7bfb01638d288a88e" %}
 {%set build_num = "0" %}

@@ -11,6 +11,18 @@ Summary: Natural Language Toolkit
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/nltk-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/nltk-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/nltk-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/nltk-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/nltk-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/nltk-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/nltk/badges/version.svg)](https://anaconda.org/conda-forge/nltk)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/nltk/badges/downloads.svg)](https://anaconda.org/conda-forge/nltk)
+
 Installing nltk
 ===============
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `nltk` available on your platform 
 ```
 conda search nltk --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/nltk-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/nltk-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/nltk-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/nltk-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/nltk-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/nltk-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/nltk/badges/version.svg)](https://anaconda.org/conda-forge/nltk)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/nltk/badges/downloads.svg)](https://anaconda.org/conda-forge/nltk)
 
 
 Updating nltk-feedstock

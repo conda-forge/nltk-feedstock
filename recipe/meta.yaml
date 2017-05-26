@@ -1,21 +1,21 @@
-{%set name = "nltk" %}
-{%set version = "3.2.2" %}
-{%set compress_type = "tar.gz" %}
-{%set hash_type = "sha256" %}
-{%set hash_val = "1b37db344770021c9be3d68f48d1667a8dae6eeff0e502b7bfb01638d288a88e" %}
-{%set build_num = "0" %}
+{% set name = "nltk" %}
+{% set version = "3.2.4" %}
+{% set bundle = "tar.gz" %}
+{% set hash_type = "sha256" %}
+{% set hash = "8682ae52f5de4f2ba7b77bd78222a38575ad01ef29946214b254dfdf93a3a0eb" %}
+{% set build = 0 %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ compress_type }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
-  {{ hash_type }}: {{ hash_val }}
+  fn: {{ name }}-{{ version }}.{{ bundle }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
+  {{ hash_type }}: {{ hash }}
 
 build:
-  number: {{ build_num }}
+  number: {{ build }}
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
@@ -57,8 +57,8 @@ test:
 
 about:
   home: http://nltk.org/
-  license: Apache 2.0
   license_file: LICENSE.txt
+  license: Apache 2.0
   license_family: Apache
   summary: 'Natural Language Toolkit'
   dev_url: https://github.com/nltk/nltk

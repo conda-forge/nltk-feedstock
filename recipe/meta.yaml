@@ -21,15 +21,6 @@ requirements:
   run:
     - python
     - six
-    - gensim
-    - numpy
-    - python-crfsuite
-    - scikit-learn
-    - scipy
-    - matplotlib
-    - pyparsing
-    - twython
-    - requests
 
 test:
   imports:

@@ -1,4 +1,4 @@
-{% set version = "3.4.4" %}
+{% set version = "3.5" %}
 
 package:
   name: nltk
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/n/nltk/nltk-{{ version }}.zip
-  sha256: 764c20a5f8532a681c261af3c7d1a54768a35df6f3603df75e615cbd34e47cb5
+  sha256: 845365449cd8c5f9731f7cb9f8bd6fd0767553b9d53af9eb1b3abf7700936b35
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -55,7 +55,7 @@ about:
   license_file: LICENSE.txt
   license: Apache 2.0
   license_family: Apache
-  summary: 'Natural Language Toolkit'
+  summary: Natural Language Toolkit
   dev_url: https://github.com/nltk/nltk
   doc_url: http://www.nltk.org/
 

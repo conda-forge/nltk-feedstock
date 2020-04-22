@@ -12,15 +12,19 @@ build:
   number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
+  entry_points:
+    - nltk = nltk.cli:cli
 
 requirements:
-  build:
+  host:
     - python
     - pip
-    - unzip
   run:
     - python
-    - six
+    - click
+    - joblib
+    - regex
+    - tqdm
 
 test:
   imports:
@@ -35,6 +39,7 @@ test:
     - nltk.corpus.reader
     - nltk.draw
     - nltk.inference
+    - nltk.lm
     - nltk.metrics
     - nltk.misc
     - nltk.parse
@@ -49,11 +54,13 @@ test:
     - nltk.tokenize
     - nltk.translate
     - nltk.twitter
+  commands:
+    - nltk -h
 
 about:
   home: http://nltk.org/
   license_file: LICENSE.txt
-  license: Apache 2.0
+  license: Apache-2.0
   license_family: Apache
   summary: Natural Language Toolkit
   dev_url: https://github.com/nltk/nltk
@@ -63,3 +70,4 @@ extra:
   recipe-maintainers:
     - pmlandwehr
     - quartox
+    - synapticarbors

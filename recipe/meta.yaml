@@ -25,6 +25,7 @@ requirements:
     - joblib
     - regex
     - tqdm
+    - pytest
 
 test:
   imports:

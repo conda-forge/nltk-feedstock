@@ -1,4 +1,4 @@
-{% set version = "3.6" %}
+{% set version = "3.6.1" %}
 
 package:
   name: nltk
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/n/nltk/nltk-{{ version }}.zip
-  sha256: 5c5c0c02942cb423d38e5d66285257f53f05e420a8715bca273fb9cf28067e0e
+  sha256: cbc2ed576998fcf7cd181eeb3ca029e5f0025b264074b4beb57ce780673f8b86
 
 build:
   number: 0
@@ -25,7 +25,6 @@ requirements:
     - joblib
     - regex
     - tqdm
-    - pytest
 
 test:
   imports:

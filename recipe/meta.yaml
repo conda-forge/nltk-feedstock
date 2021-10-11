@@ -11,7 +11,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: "{{ PYTHON }} -m pip install . -vv"
   entry_points:
     - nltk = nltk.cli:cli
 
@@ -23,7 +23,7 @@ requirements:
     - python >=3.6
     - click
     - joblib
-    - regex
+    - regex >=2021.8.3
     - tqdm
 
 test:

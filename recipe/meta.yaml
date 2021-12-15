@@ -54,8 +54,11 @@ test:
     - nltk.tokenize
     - nltk.translate
     - nltk.twitter
+  requires:
+    - pip
   commands:
-    - nltk -h
+    - pip check
+    - nltk --help
 
 about:
   home: http://nltk.org/

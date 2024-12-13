@@ -5,11 +5,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/n/nltk/nltk-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/n/nltk/nltk-{{ version }}.tar.gz
   sha256: 87d127bd3de4bd89a4f81265e5fa59cb1b199b27440175370f7417d2bc7ae868
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -17,10 +17,10 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - click
     - joblib
     - regex >=2021.8.3
@@ -56,6 +56,7 @@ test:
     - nltk.twitter
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
     - nltk --help

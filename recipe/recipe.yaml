@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 3.9.2
+  version: "3.9.3"
 
 package:
   name: nltk
@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/n/nltk/nltk-${{ version }}.tar.gz
-  sha256: 0f409e9b069ca4177c1903c3e843eef90c7e92992fa4931ae607da6de49e1419
+  sha256: cb5945d6424a98d694c2b9a0264519fab4363711065a46aa0ae7a2195b92e71f
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-build-isolation --no-deps
   python:

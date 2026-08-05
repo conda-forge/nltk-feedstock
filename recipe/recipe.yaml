@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "3.10.1"
+  version: "3.10.2"
 
 package:
   name: nltk
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/n/nltk/nltk-${{ version }}.tar.gz
-  sha256: 86a1b41d9ca0d35a2cb72fa60af4c9aaba9fe405b717161fd94cecd69f467007
+  sha256: fcfd80fb77931868cea8357573c79838b8abc609942ef9914d1c9f6070d4645c
 
 build:
   number: 0
@@ -62,7 +62,9 @@ tests:
         - nltk.translate
         - nltk.twitter
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
   - requirements:
       run:
         - python ${{ python_min }}.*

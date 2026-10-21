@@ -56,8 +56,7 @@ tests:
         - nltk.tag
         - nltk.tbl
         - nltk.test
-        - nltk.test.unit
-        - nltk.test.unit.translate
+        - nltk.test.all
         - nltk.tokenize
         - nltk.translate
         - nltk.twitter
